@@ -111,6 +111,11 @@ section {
 	text-align:center;
 }
 
+.footer-section {
+	width:100%;
+	background: #cc3433;
+}
+
 /* This is a media querry that you always want to add to make your pages responsive. This has to be written exactly like it's shown here. */
 @media only screen and (max-width : 500px) 
 {

@@ -1,0 +1,120 @@
+body {
+	margin: 0; /*removes defult browser margins. YOU ALWAYS WANT TO DO THIS PART*/
+	background: #0e3386; /*sets background to black*/
+}
+
+header {
+	background: #fff; /*sets background to white*/
+	padding: 10px 0px 10px 0px; /*shorthand fir separate padding on all sides - starts on top, goes in clockwise fashion */
+}
+
+.logo {
+		width: 100%; /*sets logo width to 100% of the users browser or container*/ 
+}
+
+.logo-container {
+		width: 150px; /* sets logo container to 200px - logo adjusts to container size because it is using percentages vs fixed width */
+		margin: 0 auto; /*centers the whole container with image included*/
+}
+
+.hero-image{
+	background: url('wrigley_field.jpg');
+	height: 400px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-text {
+	color: #fff;
+	text-shadow: 0px 0px 4px black;
+	text-align: center;
+	padding-top: 2px;
+}
+.hero-heading {
+	font-size: 48px;
+}
+
+.hero-description {
+		font-size: 22px;
+		margin-top: -30px;
+		text-transform: uppercase;
+		font-weight: 500;
+}
+
+.hero-button {
+	background: #cc3433;
+	color: white;
+	font-size: 22px;
+	padding: 10px 20px; /* 10px top/bottom 20px left/right */
+	border: 1px solid white;
+	cursor: pointer; /* changes cusros to pointer */
+	border-radius: 50px; /* rounded corders */ 
+}
+
+.hero-button:hover {
+		background: #0e3386;
+		color: white;
+		border: 1px solid white;
+		transition: 0.5s; /* craeted .5 second transition from normal settings to hover settings. */
+		padding: 10px 40px;
+}
+ul {
+		list-style: none; /* removes bullet points from unordered list */
+		padding-inline-start: 0px; /* REMOVES UL LIST DEFAULT INDENTATION */
+}
+
+li{
+	display: inline; /* allows list items to sit side by side rather then on top of eachother. */
+	padding: 5px 10px;
+	font-size: 22px;
+}
+
+a:link {
+	color: white; /* changes regular link color */
+	text-decoration: none; /*removes underline on links */
+}
+
+a:visited{
+	color: white; /* changes color of links already visited at some point */
+}
+
+a:hover {
+	color: red; /* changes color of link when you hover over it */
+	text-decoration: none; /* if you want you can add undeline here and it would add the line back under link when someone hovers back over it */
+}
+
+nav {
+	background: #0e3386;
+	overflow: hidden; /* removes extra lines given to the unordered list inside of the nav by default */
+	text-align: center; /* centers tje nav itself */
+}
+
+section {
+	text-align: center; /* centers all text items in the container. */
+	color: white; /* colors all text items in the container white */
+	background: #cc3433;
+	overflow: hidden;
+	padding-bottom: 5px;
+}
+
+.welcome-description{
+	width: 75%;
+	font-size: 22px;
+	margin: 0 auto;
+}
+
+.one-half {
+	width:50%;
+	background: white; 
+	float: left;
+	text-align:center;
+}
+
+/* This is a media querry that you always want to add to make your pages responsive. This has to be written exactly like it's shown here. */
+@media only screen and (max-width : 500px) 
+{
+	.one-half {width: 100%; font-size: 15px;}	
+	li {display: block;}
+	.hero-description {margin-top: -25px;}
+}

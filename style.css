@@ -114,6 +114,7 @@ section {
 .footer-section {
 	width:100%;
 	background: #cc3433;
+	margin: 30px;
 }
 
 /* This is a media querry that you always want to add to make your pages responsive. This has to be written exactly like it's shown here. */
